@@ -1,0 +1,64 @@
+@import variables
+@import "fonts"
+html
+  body
+    *
+      font-family: 'Chronica Pro', serif
+      font-weight: 500
+      font-style: normal
+footer
+  background: $pbc
+  .copy
+    margin: 0
+    font-size: 12px
+    font-weight: 100
+    font-style: normal
+  .legal
+    margin: 0
+    p
+      margin: 0
+      font-size: 14px
+.carousel-caption
+  position: absolute
+  z-index: 20
+  top: 0
+  left: 0
+  bottom: 0
+  width: 100%
+  background: rgba(0,0,0,.6)
+.carousel-indicators
+  li
+    width: 8px
+    height: 8px
+    border-radius: 50%
+    background: transparent
+    border: 1px solid #fff
+    &.active
+      background: #fff
+    &:focus
+      outline: 0
+.no-resize
+  resize: none
+.modalero
+  .description
+    *
+      font-weight: 300
+  .price_modal
+    color: #848484
+    font-size: 14px
+    font-weight: 400
+    &.error
+      color: $fucsia
+  .carousel-indicators
+    li
+      width: 5px
+      height: 5px
+      border-radius: 50%
+      background: #ffffff
+      border: 2px solid $fucsia
+      &.active
+        background: $fucsia
+      &:focus
+        outline: 0
+  .custom-file-input ~ .custom-file-label[data-browse]::after
+    content: 'Загрузить'
